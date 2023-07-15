@@ -11,7 +11,7 @@ Given a sequence of n numbers a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>.
 ## Proposed Solution
 ###### This solution requires prior knowledge of segment trees
 
-We create a segment tree where each leaf node i contains an array of length 1 containing a~i~ .
+We create a segment tree where each leaf node i contains an array of length 1 containing a<sub>i</sub> .
 Each parent node contains the sorted result of merging the two child arrays.
  
 For each range of length 2<sup>n</sup> we can find the number of elements greater than k by performing binary search to find the index of the first element greater than k, then subtracting that index from the length of the array.
