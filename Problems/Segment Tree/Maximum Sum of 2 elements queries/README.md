@@ -16,7 +16,7 @@ You must find i and j such that x ≤ i, j ≤ y and i != j, such that the sum a
 ## Proposed Solution
 ###### This solution requires prior knowledge of segment trees
 
-We create a segment tree where each leaf node i contains a pair of integers a and -∞ <sub>i</sub> .
+We create a segment tree where each leaf node i contains a pair of integers a and -∞.
 Each parent node contains the maximum and the second maximum of all the elements beneath it.
 
 By find the maximum and second maximum from the all the 2<sup>n</sup> ranges that intersect the the query, we can sum those 2 values for the result.
